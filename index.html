@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do list</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crete+Round">
+</head>
+
+<body>
+<!-- ------------------------------------------------------------------------------------- -->
+    <header>
+    
+        <div class="wrapper">
+            <h1>To <span class="white">Do</span> list</h1>
+            <nav>
+                <ul>
+                    <li><a href="#addTask">Add</a></li>
+                    <li><a href="#todoTask">Tasks</a></li>
+                    <li><a href="#completeTask">Completed</a></li>
+                    <li><a href="#aboutus">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    
+    </header>
+
+    <!-- ------------------------------------------------------------------------------------- -->
+
+    <section id = "addTask">
+        <div class="wrapper">
+            <h2 id="inner">Add <span class="task">Task</span>:</h2>
+            
+
+            <div class="inline">
+                <form id="form" action="" method="GET">          
+                    <div id="left">
+                        <label for="task">Task</label>
+                        <input type="text" name="task" id="task" placeholder="Enter your task...">
+                    </div>
+                    <div id="right">
+                        <label for="time">Time</label>
+                        <input type="text" name="time" id="time" placeholder="Enter your time...">
+                        <div class="timecontainer"></div>
+                    </div>
+
+                    <input type="submit" value="Enter" id="button-1">
+
+                </form>
+
+            </div>
+                
+        </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------------------------- -->
+
+    <section id = "todoTask">
+        <div class="wrapper">
+            <h2 id="inner">To Do <span class="task">Task</span>:</h2>
+            <table>
+                <thead>
+                    <tr id="tr-1">
+                        <th><strong>Task:</strong></th>
+                        <th><strong>Time:</strong></th>
+                        <th><strong>Complete:</strong></th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </section>
+
+ <script src="script.js"></script>
+
+</body>
+</html>
